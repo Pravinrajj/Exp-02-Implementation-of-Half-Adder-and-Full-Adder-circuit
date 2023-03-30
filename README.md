@@ -36,19 +36,62 @@ Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
 Program:
+```
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: PRAVINRAJJ GK
+RegisterNumber:  212222240080
 */
+---------------------------------------------
+## Half adder program:
+
+module fulladd (a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum = (a^b);
+assign carry = (a&b);
+endmodule
+
+## Full adder program:
+
+module fulladd (a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum = (a^b^c);
+assign carry = ((a&b)|(a^b)&c);
+endmodule
+```
 Logic symbol & Truthtable
 RTL realization
 
 ### Output:
-### RTL
-### TIMING DIAGRAM
+  ### Logic symbol and truth table:
+ ### Half adder
+![image](https://user-images.githubusercontent.com/117917674/228740832-fb748824-3c98-4e27-95b5-f826f1f57d21.png)
 
+### Full adder
+![image](https://user-images.githubusercontent.com/117917674/228739689-311d25f9-a6c5-4b91-bd00-68660c9e1edf.png)
+
+### RTL
+### Half adder
+![image](https://user-images.githubusercontent.com/117917674/228739879-8564a6db-9aae-48ed-8a2f-296c4f51446d.png)
+
+### Full adder
+![image](https://user-images.githubusercontent.com/117917674/228739971-4ba74889-53a6-4844-9e8c-d66f8b39f0f9.png)
+
+### TIMING DIAGRAM
+### Half adder
+![image](https://user-images.githubusercontent.com/117917674/228740154-327d4711-5f26-4052-8b3c-0c9e5965fe6d.png)
+
+### Full adder
+![image](https://user-images.githubusercontent.com/117917674/228740241-c9909c53-9b30-460b-99a1-e9a7dfbba0a1.png)
 
 ### TRUTH TABLE 
+### Half adder
+![image](https://user-images.githubusercontent.com/117917674/228740334-05c2022e-cf85-4ce4-9cf2-ab746487dbfb.png)
+
+### Full adder
+![image](https://user-images.githubusercontent.com/117917674/228740409-09d5e63d-7c95-4e17-ab7f-7076738f2662.png)
 
 ### Result:
+Thus the Implementation of Half Adder and Full Adder circuit are studied and the truth table for different logic gates are verified
